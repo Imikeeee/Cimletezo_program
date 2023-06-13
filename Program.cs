@@ -20,8 +20,14 @@ class Program
 
         foreach (int cimlet in ervenyesCimletek)
         {
+            if (visszajaro == 0)
+            {
+                break;
+            }
+
             int darab = visszajaro / cimlet;
             visszajaro %= cimlet;
+
             Console.WriteLine(darab + " x " + cimlet);
         }
     }
